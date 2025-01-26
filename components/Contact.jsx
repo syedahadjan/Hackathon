@@ -61,7 +61,7 @@ export default function Contact() {
 
   return (
     <section
-      className="min-h-screen bg-gradient-to-br from-green-800 via-green-700 to-teal-600 py-12 px-4 sm:px-6 lg:px-8"
+      className="min-h-screen bg-gradient-to-br from-blue-800 via-blue-700 to-sky-600 py-12 px-4 sm:px-6 lg:px-8"
       id="contact"
     >
       <motion.div className="container mx-auto" initial="hidden" animate="visible" variants={containerVariants}>
@@ -86,7 +86,7 @@ export default function Contact() {
                     name="firstname"
                     value={formData.firstname}
                     className={`w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 
-                      focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent
+                      focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent
                       transition-all duration-300 transform hover:bg-white/30
                       ${activeField === "firstname" ? "scale-[1.02] shadow-lg" : ""}`}
                     placeholder="First Name"
@@ -106,7 +106,7 @@ export default function Contact() {
                     name="lastname"
                     value={formData.lastname}
                     className={`w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 
-                      focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent
+                      focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent
                       transition-all duration-300 transform hover:bg-white/30
                       ${activeField === "lastname" ? "scale-[1.02] shadow-lg" : ""}`}
                     placeholder="Last Name"
@@ -127,7 +127,7 @@ export default function Contact() {
                   name="email"
                   value={formData.email}
                   className={`w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 
-                    focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent
+                    focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent
                     transition-all duration-300 transform hover:bg-white/30
                     ${activeField === "email" ? "scale-[1.02] shadow-lg" : ""}`}
                   placeholder="example@email.com"
@@ -153,7 +153,7 @@ export default function Contact() {
                   name="phone"
                   value={formData.phone}
                   className={`w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 
-                    focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent
+                    focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent
                     transition-all duration-300 transform hover:bg-white/30
                     ${activeField === "phone" ? "scale-[1.02] shadow-lg" : ""}`}
                   placeholder="+92 300 1234567"
@@ -172,7 +172,7 @@ export default function Contact() {
                   name="message"
                   value={formData.message}
                   className={`w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 
-                    focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent
+                    focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent
                     transition-all duration-300 transform hover:bg-white/30 min-h-[150px] resize-y
                     ${activeField === "message" ? "scale-[1.02] shadow-lg" : ""}`}
                   placeholder="Leave a message..."
@@ -188,8 +188,8 @@ export default function Contact() {
               <motion.button
                 type="submit"
                 disabled={state.submitting}
-                className="relative flex items-center justify-center px-6 py-3 text-gray-900 bg-yellow-500 hover:bg-yellow-400 rounded-lg 
-                  transition-all duration-300 disabled:opacity-50 disabled:hover:bg-yellow-500 group overflow-hidden"
+                className="relative flex items-center justify-center px-6 py-3 text-white bg-sky-500 hover:bg-sky-400 rounded-lg 
+                  transition-all duration-300 disabled:opacity-50 disabled:hover:bg-sky-500 group overflow-hidden"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -226,9 +226,9 @@ export default function Contact() {
                 whileHover={{ x: 10 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
-                <MapPin className="w-6 h-6 text-yellow-300 mt-1 group-hover:scale-110 transition-transform duration-300" />
+                <MapPin className="w-6 h-6 text-sky-300 mt-1 group-hover:scale-110 transition-transform duration-300" />
                 <p className="text-white text-lg">
-                  Office 205, Green Tower,
+                  Office 205, Blue Tower,
                   <br />
                   Plot 15, Sector F-7 Markaz,
                   <br />
@@ -240,7 +240,7 @@ export default function Contact() {
                 whileHover={{ x: 10 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
-                <Phone className="w-6 h-6 text-yellow-300 group-hover:scale-110 transition-transform duration-300" />
+                <Phone className="w-6 h-6 text-sky-300 group-hover:scale-110 transition-transform duration-300" />
                 <p className="text-white text-lg">051-2345678</p>
               </motion.div>
               <motion.div
@@ -248,7 +248,7 @@ export default function Contact() {
                 whileHover={{ x: 10 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
-                <Mail className="w-6 h-6 text-yellow-300 group-hover:scale-110 transition-transform duration-300" />
+                <Mail className="w-6 h-6 text-sky-300 group-hover:scale-110 transition-transform duration-300" />
                 <a
                   href="mailto:info@saylanimicrofinance.com"
                   className="text-white text-lg hover:underline transition-all duration-300"
@@ -261,7 +261,7 @@ export default function Contact() {
                 whileHover={{ x: 10 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
               >
-                <Smartphone className="w-6 h-6 text-yellow-300 group-hover:scale-110 transition-transform duration-300" />
+                <Smartphone className="w-6 h-6 text-sky-300 group-hover:scale-110 transition-transform duration-300" />
                 <p className="text-white text-lg">0333-1234567 / 0300-9876543</p>
               </motion.div>
             </div>

@@ -14,8 +14,8 @@ const bebasNeue = Bebas_Neue({
 });
 
 export const metadata = {
-  title: "ZAK SOFT",
-  description: "ZAK SOFT PRIVATE LIMITED",
+  title: "MICRO FINANCE APP",
+  description: "SAYLANI MICRO FINANCE APP",
 };
 
 export default function RootLayout({ children }) {
@@ -24,10 +24,10 @@ export default function RootLayout({ children }) {
       <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon" />
-<link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+        <link rel="icon" href="/" type="image/x-icon" />
+<link rel="apple-touch-icon" href="/" />
+<link rel="icon" type="image/png" sizes="32x32" href="/" />
+<link rel="icon" type="image/png" sizes="16x16" href="/" />
       </head>
       <body className={`antialiased ${inter.variable} ${bebasNeue.variable}`}>
         {children}

@@ -28,7 +28,7 @@ const Footer = () => {
   }
 
   return (
-    <footer className="bg-gradient-to-br from-green-800 via-green-700 to-teal-600 text-white">
+    <footer className="bg-gradient-to-br from-blue-800 via-blue-700 to-sky-600 text-white">
       <motion.div
         className="container mx-auto px-4 py-12"
         initial="hidden"
@@ -88,7 +88,7 @@ const Footer = () => {
                 <motion.li key={item} whileHover={{ x: 5 }}>
                   <Link
                     href={`/${item.toLowerCase().replace(" ", "-")}`}
-                    className="text-white/70 hover:text-yellow-300 flex items-center gap-2 transition-colors"
+                    className="text-white/70 hover:text-sky-300 flex items-center gap-2 transition-colors"
                   >
                     <ChevronRight className="w-4 h-4" />
                     {item}
@@ -106,7 +106,7 @@ const Footer = () => {
                 <motion.li key={service} whileHover={{ x: 5 }}>
                   <Link
                     href={`/services/${service.toLowerCase().replace(" ", "-")}`}
-                    className="text-white/70 hover:text-yellow-300 flex items-center gap-2 transition-colors group"
+                    className="text-white/70 hover:text-sky-300 flex items-center gap-2 transition-colors group"
                   >
                     <ChevronRight className="w-4 h-4" />
                     {service}
@@ -125,11 +125,11 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:border-transparent transition-all"
+                className="w-full px-4 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-sky-300 focus:border-transparent transition-all"
               />
               <motion.button
                 type="submit"
-                className="w-full px-4 py-2 rounded-lg bg-yellow-500 text-gray-900 font-medium hover:bg-yellow-400 transition-colors"
+                className="w-full px-4 py-2 rounded-lg bg-sky-500 text-white font-medium hover:bg-sky-400 transition-colors"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -148,22 +148,22 @@ const Footer = () => {
             © {new Date().getFullYear()} Saylani Micro Finance. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <Link href="/privacy" className="text-white/70 hover:text-yellow-300 transition-colors">
+            <Link href="/privacy" className="text-white/70 hover:text-sky-300 transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-white/70 hover:text-yellow-300 transition-colors">
+            <Link href="/terms" className="text-white/70 hover:text-sky-300 transition-colors">
               Terms of Service
             </Link>
           </div>
           <motion.button
             onClick={scrollToTop}
-            className="fixed bottom-8 right-8 w-10 h-10 rounded-full bg-yellow-500 backdrop-blur-sm flex items-center justify-center hover:bg-yellow-400 transition-colors"
+            className="fixed bottom-8 right-8 w-10 h-10 rounded-full bg-sky-500 backdrop-blur-sm flex items-center justify-center hover:bg-sky-400 transition-colors"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
           >
-            <ChevronRight className="w-6 h-6 rotate-[-90deg] text-gray-900" />
+            <ChevronRight className="w-6 h-6 rotate-[-90deg] text-white" />
           </motion.button>
         </motion.div>
       </motion.div>

@@ -26,11 +26,11 @@ const Navbar = () => {
   }, [])
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-green-800 bg-opacity-90 backdrop-blur-md">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-blue-800 bg-opacity-90 backdrop-blur-md">
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="text-white text-xl font-bold">
-          <Link href="/" className="hover:text-yellow-300 transition-colors">
+          <Link href="/" className="hover:text-blue-300 transition-colors">
             Saylani Micro Finance
           </Link>
         </div>
@@ -41,7 +41,7 @@ const Navbar = () => {
           <li>
             <Link
               href="/"
-              className={`text-white hover:text-yellow-300 transition-colors ${
+              className={`text-white hover:text-blue-300 transition-colors ${
                 activeSection === "home" ? "border-b-2 border-yellow-300" : ""
               }`}
             >
@@ -51,14 +51,14 @@ const Navbar = () => {
 
           {/* About Us Link */}
           <li>
-            <Link href="/about-us" className="text-white hover:text-yellow-300 transition-colors">
+            <Link href="/about-us" className="text-white hover:text-blue-300 transition-colors">
               About Us
             </Link>
           </li>
 
           {/* Services Link */}
           <li>
-            <Link href="/services-page" className="text-white hover:text-yellow-300 transition-colors">
+            <Link href="/services-page" className="text-white hover:text-blue-300 transition-colors">
               Services
             </Link>
           </li>
@@ -67,7 +67,7 @@ const Navbar = () => {
           <li>
             <Link
               href="#journey"
-              className={`text-white hover:text-yellow-300 transition-colors ${
+              className={`text-white hover:text-blue-300 transition-colors ${
                 activeSection === "journey" ? "border-b-2 border-yellow-300" : ""
               }`}
             >
@@ -79,7 +79,7 @@ const Navbar = () => {
           <li>
             <Link
               href="#contact"
-              className={`text-white hover:text-yellow-300 transition-colors ${
+              className={`text-white hover:text-blue-300 transition-colors ${
                 activeSection === "contact" ? "border-b-2 border-yellow-300" : ""
               }`}
             >
